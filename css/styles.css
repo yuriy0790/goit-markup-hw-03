@@ -1,0 +1,210 @@
+:root {
+  --primary-text-color: #757575;
+  --title-primary-text-color: #212121;
+  --title-secondary-text-color: #ffffff;
+  --primary-background-color: #2f303a;
+  --secondary-background-color: #f5f4fa;
+  --page-background: #ffffff;
+  --accent-color: #2196f3;
+  --logo-color: #000000;
+}
+
+body {
+  color: var(--primary-text-color);
+  background-color: var(--page-background);
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+/* Шрифты */
+/* raleway 700
+roboto 400
+roboto 500
+roboto 900
+roboto 700 */
+
+/* Формат логотипа */
+.logo {
+  color: var(--logo-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+/* Формат логотипа в футере */
+.page-footer .logo {
+  color: var(--title-secondary-text-color);
+}
+/* Половину логотипа делает #2196F3 */
+.logo .halflogo {
+  color: var(--accent-color);
+}
+
+/* Убирает форматирование списков */
+.list {
+  list-style: none;
+}
+/* Убирает форматирование ссылок */
+.nounderline {
+  text-decoration: none;
+}
+
+/* Фон чередующихся секций */
+.section-background {
+  background-color: var(--secondary-background-color);
+}
+
+/* Курсор указатель для кнопок */
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* Навигация по сайту */
+.site-nav .link {
+  color: var(--title-primary-text-color);
+  font-weight: 500;
+  /* font-size: 14px; наследуется из боди */
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.site-nav .current,
+.site-nav .link:focus,
+.site-nav .link:hover {
+  color: var(--accent-color);
+}
+
+/* Список контактов */
+.contact-list .contact {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  /* font-size: 14px; наследуется из боди */
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.contact-list .contact:focus,
+.contact-list .contact:hover {
+  color: var(--accent-color);
+}
+
+/* Заголовки секций */
+.section-header {
+  color: var(--title-primary-text-color);
+  /* font-weight: 700; значение для заголовков умолчанию*/
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+/* Секция-герой */
+.hero-zone {
+  background-color: var(--primary-background-color);
+}
+.hero-zone .hero-header {
+  color: var(--title-secondary-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.hero-zone .hero-button {
+  color: var(--title-secondary-text-color);
+  background-color: var(--accent-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+}
+.hero-zone .hero-button:hover,
+.hero-zone .hero-button:focus {
+  color: var(--title-primary-text-color);
+  background-color: var(--secondary-background-color);
+}
+
+/* Секция Преимущества */
+.benefits-list .benefit-header {
+  color: var(--title-primary-text-color);
+  /* font-weight: 700; значение для заголовков умолчанию*/
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.benefit-header .plaintext {
+  /* font-weight: 400; значение для параграфа умолчанию */
+  /* font-size: 14px; наследуется из боди */
+  line-height: 1.71;
+}
+
+/* секция Чим займаємося */
+
+/* Секция Наша команда */
+.team-list .teammate-name {
+  color: var(--title-primary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.team-list .teammate-position {
+  /* font-weight: 400 значение для параграфа умолчанию */
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+/* Кнопки фильтра превью проектов*/
+.filter-buttons-list .filter-button {
+  color: var(--title-primary-text-color);
+  background-color: var(--secondary-background-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+}
+.filter-buttons-list .filter-button:focus,
+.filter-buttons-list .filter-button:hover {
+  color: var(--title-secondary-text-color);
+  background-color: var(--accent-color);
+}
+
+/* Секция превью проектов */
+.projects-preview-list .project-preview-name {
+  color: var(--title-primary-text-color);
+  /* font-weight: 700; значение для заголовков умолчанию*/
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.projects-preview-list .project-type {
+  /* font-weight: 400; значение для параграфа умолчанию */
+  font-size: 16px;
+  line-height: 1.88;
+}
+/* Футер */
+.page-footer {
+  background-color: var(--primary-background-color);
+}
+/* Адрес в футере*/
+.page-footer .address-footer {
+  color: var(--title-secondary-text-color);
+  /* font-weight: 400; значение для параграфа умолчанию*/
+  /* font-size: 14px; наследуется из боди */
+  font-style: normal;
+  line-height: 1.71;
+}
+/* Имейл и телефон */
+.contact-list .contact-footer {
+  color: rgb(255, 255, 255, 0.6);
+  /* font-weight: 400; */
+  /* font-size: 14px; наследуется из боди */
+  font-style: normal;
+  line-height: 1.71;
+}
+.contact-list .contact-footer:focus,
+.contact-list .contact-footer:hover {
+  color: var(--accent-color);
+}
