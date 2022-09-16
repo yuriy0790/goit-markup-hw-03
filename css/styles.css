@@ -189,22 +189,17 @@ roboto 700 */
   background-color: var(--primary-background-color);
 }
 /* Адрес в футере*/
-.page-footer .address-footer {
+.contact-footer.address-footer {
   color: var(--title-secondary-text-color);
-  /* font-weight: 400; значение для параграфа умолчанию*/
-  /* font-size: 14px; наследуется из боди */
-  font-style: normal;
-  line-height: 1.71;
 }
-/* Имейл и телефон */
-.contact-list .contact-footer {
+.contact-footer {
   color: rgb(255, 255, 255, 0.6);
   /* font-weight: 400; */
   /* font-size: 14px; наследуется из боди */
   font-style: normal;
   line-height: 1.71;
 }
-.contact-list .contact-footer:focus,
-.contact-list .contact-footer:hover {
+.contact-footer:focus,
+.contact-footer:hover {
   color: var(--accent-color);
 }
