@@ -9,12 +9,23 @@
   --logo-color: #000000;
 }
 
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   color: var(--primary-text-color);
   background-color: var(--page-background);
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
+
+  margin: 0;
 }
 
 /* Шрифты */
@@ -24,21 +35,9 @@ roboto 500
 roboto 900
 roboto 700 */
 
-/* Формат логотипа */
-.logo {
-  color: var(--logo-color);
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-}
-/* Формат логотипа в футере */
-.page-footer .logo {
-  color: var(--title-secondary-text-color);
-}
-/* Половину логотипа делает #2196F3 */
-.logo .halflogo {
-  color: var(--accent-color);
+.outline {
+  outline: 2px solid tomato;
+  background-color: rgba(0, 128, 128, 0.507);
 }
 
 /* Убирает форматирование списков */
@@ -58,6 +57,29 @@ roboto 700 */
 /* Курсор указатель для кнопок */
 .cursor-pointer {
   cursor: pointer;
+}
+
+/* Ширина контентной области */
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+/* Формат логотипа */
+.logo {
+  color: var(--logo-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+/* Формат логотипа в футере */
+.page-footer .logo {
+  color: var(--title-secondary-text-color);
+}
+/* Половину логотипа делает #2196F3 */
+.logo .halflogo {
+  color: var(--accent-color);
 }
 
 /* Навигация по сайту */
