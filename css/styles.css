@@ -350,7 +350,7 @@ roboto 700 */
   /* font-weight: 400; */
   /* font-size: 14px; наследуется из боди */
   font-style: normal;
-  line-height: 1.71;
+  line-height: 1.5;
 }
 .contact-footer:focus,
 .contact-footer:hover {
