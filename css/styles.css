@@ -166,7 +166,11 @@ body {
 .contact-list .list-item:not(:last-child) {
   margin-right: 50px;
 }
-
+/* Формат секций */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 /* Заголовки секций */
 .section-header {
   color: var(--title-primary-text-color);
@@ -217,9 +221,8 @@ body {
 }
 
 /* Секция Преимущества */
-.benefits-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.section.benefits-section {
+  padding-bottom: 0;
 }
 .benefits-list {
   display: flex;
@@ -247,9 +250,6 @@ body {
 }
 
 /* секция Чим займаємося */
-.works-section {
-  padding-bottom: 94px;
-}
 .works-list {
   display: flex;
   justify-content: space-between;
@@ -257,10 +257,6 @@ body {
 }
 
 /* Секция Наша команда */
-.team-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 .team-list {
   margin-top: 50px;
   display: flex;
@@ -295,11 +291,6 @@ body {
 }
 /* СТРАНИЦА ПОРТФОЛИО */
 /* Кнопки фильтра превью проектов*/
-.projects-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .filter-buttons-list {
   text-align: center;
   margin-bottom: 50px;
