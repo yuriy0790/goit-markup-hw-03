@@ -18,6 +18,12 @@ html {
   box-sizing: inherit;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 h1,
 h2,
 h3,
@@ -38,18 +44,6 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
-}
-
-/* Шрифты */
-/* raleway 700
-roboto 400
-roboto 500
-roboto 900
-roboto 700 */
-
-.outline {
-  outline: 1px solid tomato;
-  background-color: rgba(0, 128, 128, 0.507);
 }
 
 /* Убирает форматирование списков */
@@ -185,14 +179,12 @@ roboto 700 */
 /* Секция-герой */
 .hero-zone {
   padding-top: 200px;
-  padding-bottom: 210px;
+  padding-bottom: 200px;
   text-align: center;
 
   background-color: var(--primary-background-color);
 }
 .hero-zone .hero-header {
-  /* padding-top: 200px; */
-
   color: var(--title-secondary-text-color);
 
   font-weight: 900;
@@ -205,14 +197,11 @@ roboto 700 */
   display: inline-block;
   min-width: 216px;
   padding: 10px 32px;
-  margin-top: 40px;
-  /* margin-bottom: 210px; */
-  /* Не можна розсувати батьківський елемент вниз марджином а паддінг це розмір самої кнопки */
+  margin-top: 30px;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 1px solid transparent;
-  /* Уточнить по бордеру цвет или прозрачный */
   color: var(--title-secondary-text-color);
   background-color: var(--accent-color);
 
@@ -272,17 +261,23 @@ roboto 700 */
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.team-section .section-header {
-  margin-bottom: 50px;
-}
 .team-list {
+  margin-top: 50px;
   display: flex;
   justify-content: space-between;
+}
+.team-list .list-item {
+  width: 270px;
+  padding-bottom: 30px;
+
+  background-color: var(--page-background);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-list .teammate-name {
   margin-top: 30px;
-  margin-bottom: 10px;
 
   color: var(--title-primary-text-color);
   font-weight: 500;
@@ -292,13 +287,32 @@ roboto 700 */
 }
 .team-list .teammate-position {
   /* font-weight: 400 значение для параграфа умолчанию */
+  margin-top: 10px;
+
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
 }
-
+/* СТРАНИЦА ПОРТФОЛИО */
 /* Кнопки фильтра превью проектов*/
+.projects-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.filter-buttons-list {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.filter-buttons-list .list-item {
+  display: inline-block;
+}
 .filter-buttons-list .filter-button {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 22px;
+  padding-left: 22px;
+
   color: var(--title-primary-text-color);
   background-color: var(--secondary-background-color);
   font-family: inherit;
@@ -306,15 +320,42 @@ roboto 700 */
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
+  border: 1px solid transparent;
+  border-radius: 4px;
 }
 .filter-buttons-list .filter-button:focus,
 .filter-buttons-list .filter-button:hover {
   color: var(--title-secondary-text-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.filter-buttons-list .list-item:not(:last-child) {
+  margin-right: 8px;
+}
+.filter-buttons-list .filter-button.little-button {
+  padding-right: 25px;
+  padding-left: 25px;
 }
 
 /* Секция превью проектов */
+.projects-preview-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+.projects-preview-list .list-item {
+  margin: 15px;
+  padding-bottom: 20px;
+  border: 1px solid #eeeeee;
+  width: 370px;
+}
+
 .projects-preview-list .project-preview-name {
+  margin-top: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+
   color: var(--title-primary-text-color);
   /* font-weight: 700; значение для заголовков умолчанию*/
   font-size: 18px;
@@ -322,6 +363,9 @@ roboto 700 */
   letter-spacing: 0.06em;
 }
 .projects-preview-list .project-type {
+  margin-top: 4px;
+  padding-left: 24px;
+  padding-right: 24px;
   /* font-weight: 400; значение для параграфа умолчанию */
   font-size: 16px;
   line-height: 1.88;
