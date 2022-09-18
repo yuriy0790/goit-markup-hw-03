@@ -211,7 +211,7 @@ roboto 700 */
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  border: 1px solid var(--accent-color);
+  border: 1px solid transparent;
   /* Уточнить по бордеру цвет или прозрачный */
   color: var(--title-secondary-text-color);
   background-color: var(--accent-color);
