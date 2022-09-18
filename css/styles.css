@@ -346,16 +346,18 @@ body {
 }
 .projects-preview-list .list-item {
   margin: 15px;
-  padding-bottom: 20px;
-  border: 1px solid #eeeeee;
   width: 370px;
 }
-
-.projects-preview-list .project-preview-name {
-  margin-top: 20px;
+.project-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
-
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+.projects-preview-list .project-preview-name {
   color: var(--title-primary-text-color);
   /* font-weight: 700; значение для заголовков умолчанию*/
   font-size: 18px;
@@ -364,8 +366,6 @@ body {
 }
 .projects-preview-list .project-type {
   margin-top: 4px;
-  padding-left: 24px;
-  padding-right: 24px;
   /* font-weight: 400; значение для параграфа умолчанию */
   font-size: 16px;
   line-height: 1.88;
