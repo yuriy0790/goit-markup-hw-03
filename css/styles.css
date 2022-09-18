@@ -228,11 +228,13 @@ roboto 700 */
 }
 
 /* Секция Преимущества */
+.benefits-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .benefits-list {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 .benefits-list .list-item {
   width: calc((100%-90px) / 4);
@@ -256,13 +258,32 @@ roboto 700 */
 }
 
 /* секция Чим займаємося */
-.works-list li {
-  display: inline-block;
+.works-section {
+  padding-bottom: 94px;
+}
+.works-list {
+  display: flex;
+  justify-content: space-between;
   margin-top: 50px;
 }
 
 /* Секция Наша команда */
+.team-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.team-section .section-header {
+  margin-bottom: 50px;
+}
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
+
 .team-list .teammate-name {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
   color: var(--title-primary-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -308,10 +329,21 @@ roboto 700 */
 /* Футер */
 .page-footer {
   background-color: var(--primary-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
+
 /* Адрес в футере*/
+.footer-contacts-area {
+  margin-top: 20px;
+}
+.contact-footer {
+  display: block;
+  margin-top: 9px;
+}
 .contact-footer.address-footer {
   color: var(--title-secondary-text-color);
+  margin-top: 0;
 }
 .contact-footer {
   color: rgb(255, 255, 255, 0.6);
